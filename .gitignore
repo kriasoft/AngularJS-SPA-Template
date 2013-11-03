@@ -108,6 +108,9 @@ _TeamCity*
 *.ncrunch*
 .*crunch*.local.xml
 
+# Chutzpah
+_Chutzpah*
+
 # Installshield output folder
 [Ee]xpress/
 

@@ -1304,7 +1304,7 @@ function getter(obj, path, bindFnToScope) {
  * Interface for configuring angular {@link angular.module modules}.
  */
 
-function setupModuleLoader(window) {
+function setupModuleLoader(windowObj) {
 
   var $injectorMinErr = minErr('$injector');
 
@@ -1312,7 +1312,7 @@ function setupModuleLoader(window) {
     return obj[name] || (obj[name] = factory());
   }
 
-  return ensure(ensure(window, 'angular', Object), 'module', function() {
+  return ensure(ensure(windowObj, 'angular', Object), 'module', function() {
     /** @type {Object.<string, angular.Module>} */
     var modules = {};
 
@@ -3707,19 +3707,19 @@ var $AnimateProvider = ['$provide', function($provide) {
  * the real browser apis.
  */
 /**
- * @param {object} window The global window object.
+ * @param {object} windowObj The global window object.
  * @param {object} document jQuery wrapped document.
  * @param {function()} XHR XMLHttpRequest constructor.
  * @param {object} $log console.log or an object with the same interface.
  * @param {object} $sniffer $sniffer service
  */
-function Browser(window, document, $log, $sniffer) {
+function Browser(windowObj, document, $log, $sniffer) {
   var self = this,
       rawDocument = document[0],
-      location = window.location,
-      history = window.history,
-      setTimeout = window.setTimeout,
-      clearTimeout = window.clearTimeout,
+      location = windowObj.location,
+      history = windowObj.history,
+      setTimeout = windowObj.setTimeout,
+      clearTimeout = windowObj.clearTimeout,
       pendingDeferIds = {};
 
   self.isMock = false;
@@ -3840,7 +3840,7 @@ function Browser(window, document, $log, $sniffer) {
    */
   self.url = function(url, replace) {
     // Android Browser BFCache causes location reference to become stale.
-    if (location !== window.location) location = window.location;
+    if (location !== windowObj.location) location = windowObj.location;
 
     // setter
     if (url) {
@@ -3914,9 +3914,9 @@ function Browser(window, document, $log, $sniffer) {
       // changed by push/replaceState
 
       // html5 history api - popstate event
-      if ($sniffer.history) jqLite(window).on('popstate', fireUrlChange);
+      if ($sniffer.history) jqLite(windowObj).on('popstate', fireUrlChange);
       // hashchange event
-      if ($sniffer.hashchange) jqLite(window).on('hashchange', fireUrlChange);
+      if ($sniffer.hashchange) jqLite(windowObj).on('hashchange', fireUrlChange);
       // polling
       else self.addPollFn(fireUrlChange);
 
