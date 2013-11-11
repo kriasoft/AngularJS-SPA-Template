@@ -11,6 +11,11 @@ You can use it to quickly bootstrap your AngularJS web app projects and dev envi
 Just clone the repo, open solution file from the ```Source``` folder and you are ready to develop
 and test your application.
 
+### Demo Site
+
+http://angular-demo.tarkus.me
+
+
 ### Development Environment
 
  - [Visual Studio 2013](http://www.visualstudio.com) with extension(s):
