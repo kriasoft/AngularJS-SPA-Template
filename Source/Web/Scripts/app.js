@@ -37,7 +37,7 @@
         var view = angular.element('#ui-view');
         $templateCache.put(view.data('tmpl-url'), view.html());
         $rootScope.$on('$stateChangeSuccess', function (event, toState) {
-            $rootScope.template = toState.layout || 'full';
+            $rootScope.layout = toState.layout || 'full';
         });
     }]);
 
