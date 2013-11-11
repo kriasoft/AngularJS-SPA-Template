@@ -1,0 +1,22 @@
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="BundleConfig.cs" company="KriaSoft LLC">
+//   Copyright © 2013 Konstantin Tarkus, KriaSoft LLC. See LICENSE.txt
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
+
+namespace App.Web
+{
+    using System.Web;
+    using System.Web.Optimization;
+
+    public class BundleConfig
+    {
+        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
+        public static void RegisterBundles(BundleCollection bundles)
+        {
+            bundles.Add(new ScriptBundle("~/js/jquery").Include("~/scripts/vendor/jquery-{version}.js"));
+
+            bundles.Add(new StyleBundle("~/css/app").Include("~/styles/app.css"));
+        }
+    }
+}

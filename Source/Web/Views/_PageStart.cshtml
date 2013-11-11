@@ -1,0 +1,10 @@
+﻿@{
+    // Check if partial views is requested, if so, apply a layout template to it
+    Layout = Request.AppRelativeCurrentExecutionFilePath.StartsWith("~/views/") ? null : "~/Views/_Layout.cshtml";
+
+    // The 'templateUrl' property is set in Routing/DefaultRouteHandler.cs
+    if (Request.RequestContext.RouteData.DataTokens["templateUrl"] == "/views/404")
+    {
+        Response.StatusCode = 404;
+    }
+}

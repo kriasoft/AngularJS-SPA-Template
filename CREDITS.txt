@@ -1,6 +1,7 @@
 Copyright (c) 2013 Konstantin Tarkus, KriaSoft LLC
+https://github.com/kriasoft/AngularJS-SPA-Template
 
-This software is released under the Apache License 2.0 (the "License"); 
+This software is released under the MIT License (the "License"); 
 you may not use the software except in compliance with the License. You 
 can find a copy of the License in the file LICENSE.txt accompanying this 
 file. 
@@ -12,12 +13,6 @@ copyright notices have been preserved within the respective files and or
 packages. Please refer to the specific files and/or packages for more 
 detailed information about the authors, copyright notices, and licenses.
 
-
-Json.NET
------
-Website:      http://json.codeplex.com/
-Copyright:    Copyright (c) 2007 James Newton-King
-License:      The MIT License (MIT)
 
 AngularJS
 -----
@@ -31,9 +26,15 @@ Website:      http://jquery.com
 Copyright:    Copyright (c) 2010 John Resig, http://jquery.com
 License:      The MIT License (MIT)
 
+Json.NET
+-----
+Website:      http://json.codeplex.com/
+Copyright:    Copyright (c) 2007 James Newton-King
+License:      The MIT License (MIT)
+
 Moq
 -----
-Website:      http://code.google.com/p/moq/
+Website:      https://github.com/Moq
 Copyright:    Copyright (c) 2007. Clarius Consulting,
               Manas Technology Solutions, InSTEDD
 License:      New BSD

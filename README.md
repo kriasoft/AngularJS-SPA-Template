@@ -3,7 +3,7 @@
 This project is a skeleton for a simple single-page web application (SPA) built on top of the:
 
  - [ASP.NET Web Pages](http://www.asp.net/web-pages) (Razor) 3.0
- - [AngularJS](http://www.angularjs.org) 1.2 RC3 - JavaScript Framework
+ - [AngularJS](http://www.angularjs.org) 1.2.0 - JavaScript Framework
  - [Bootstrap](http://getbootstrap.com/) 3.0.1 - CSS Framework (based on [LESS](http://lesscss.org/))
 
 You can use it to quickly bootstrap your AngularJS web app projects and dev environment for these projects.
@@ -40,6 +40,6 @@ repo into your project by running the following commands:
     git merge base/master
     # Merges any changes fetched into your working files
 
-### Contacts
+### Feedback
 
-Have questions or need help? Email me at [hello@tarkus.me](mailto:hello@tarkus.me)
+Have questions or need help? Email me at [hello@tarkus.me](mailto:hello@tarkus.me) or Skype: koistya
