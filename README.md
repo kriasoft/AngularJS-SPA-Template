@@ -27,23 +27,29 @@ http://angular-demo.tarkus.me
 
 To clone the repo run:
 
-    git clone -o base git@github.com:kriasoft/AngularJS-SPA-Template.git MyApp
+```bash
+git clone -o base git@github.com:kriasoft/AngularJS-SPA-Template.git MyApp
+````
 
 Where ```MyApp``` is your project name. Then rename the included solution file:
 
-    git mv Source/Application.sln Source/MyApp.sln
-    git add .
-    git commit -m 'Rename Application.sln file'
+```bash
+git mv Source/Application.sln Source/MyApp.sln
+git add .
+git commit -m 'Rename Application.sln file'
+```
 
 Open ```MyApp.sln``` in Visual Studio and you are ready to go.
 
 Later on you can always pull and merge the latest changes from [AngularJS SPA Template](https://github.com/kriasoft/AngularJS-SPA-Template)
 repo into your project by running the following commands:
 
-    git fetch base
-    # Fetches any new changes from the AngularJS SPA Template repository (base)
-    git merge base/master
-    # Merges any changes fetched into your working files
+```bash
+git fetch base
+# Fetches any new changes from the AngularJS SPA Template repository (base)
+git merge base/master
+# Merges any changes fetched into your working files
+```
 
 ### Feedback
 

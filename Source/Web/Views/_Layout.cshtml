@@ -6,7 +6,7 @@
     <title>AngularJS SPA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="~/content/app.css">
+    @Styles.Render("~/css/app")
 </head>
 <body>
     <!--[if lt IE 9]>
@@ -49,8 +49,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    <script src="~/scripts/vendor/angular-ui-router.min.js?v=0.2.0-dev-2013-11-11"></script>
-    <script src="~/scripts/app.js"></script>
+    @Scripts.Render("~/js/app")
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

@@ -36,7 +36,7 @@
     app.run(['$templateCache', '$rootScope', '$state', '$stateParams', function ($templateCache, $rootScope, $state, $stateParams) {
 
         // <ui-view> contains a pre-rendered template for the current view
-        // caching it will prevent a round-trip to the server at the first page load
+        // caching it will prevent a round-trip to a server at the first page load
         var view = angular.element('#ui-view');
         $templateCache.put(view.data('tmpl-url'), view.html());
 
