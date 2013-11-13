@@ -12,9 +12,8 @@
     <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <!-- Add your site or application content here -->
-    <!-- Docs master nav -->
-    <header class="navbar navbar-inverse" role="banner" ng-show="layout == 'full'">
+
+    <header class="navbar navbar-inverse" role="banner" ng-if=" !layout ">@* The 'layout' property is set inside the app.run(..) method on '$stateChangeSuccess' *@
         <div class="container">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".spa-navbar-collapse">

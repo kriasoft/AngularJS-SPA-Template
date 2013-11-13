@@ -47,7 +47,7 @@
         // Sets the layout name. Which can be used to display different layouts (header, footer etc.)
         // base on which page a user is located
         $rootScope.$on('$stateChangeSuccess', function (event, toState) {
-            $rootScope.layout = toState.layout || 'full';
+            $rootScope.layout = toState.layout;
         });
     }]);
 
