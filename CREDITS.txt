@@ -20,6 +20,12 @@ Website:      http://angularjs.org/
 Copyright:    Copyright (c) 2010-2012 Google, Inc. http://angularjs.org
 License:      The MIT License (MIT)
 
+Bootstrap
+-----
+Website:      http://getbootstrap.com
+Copyright:    Copyright (c) 2013 Twitter, Inc.
+License:      The Apache 2.0 License
+
 jQuery
 -----
 Website:      http://jquery.com
