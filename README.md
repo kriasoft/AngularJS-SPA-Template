@@ -28,7 +28,7 @@ http://angular-demo.tarkus.me
 To clone the repo run:
 
 ```bash
-git clone -o base git@github.com:kriasoft/AngularJS-SPA-Template.git MyApp
+git clone -o base https://github.com/kriasoft/AngularJS-SPA-Template.git MyApp
 ````
 
 Where ```MyApp``` is your project name. Then rename the included solution file:
