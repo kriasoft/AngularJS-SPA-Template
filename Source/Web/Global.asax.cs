@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Application.cs" company="KriaSoft LLC">
+// <copyright file="Global.asax.cs" company="KriaSoft LLC">
 //   Copyright © 2013 Konstantin Tarkus, KriaSoft LLC. See LICENSE.txt
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Startup.cs" company="KriaSoft LLC">
+// <copyright file="Startup.Auth.cs" company="KriaSoft LLC">
 //   Copyright © 2013 Konstantin Tarkus, KriaSoft LLC. See LICENSE.txt
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
@@ -26,20 +26,20 @@ namespace App.Web
             // Use a cookie to temporarily store information about a user logging in with a third party login provider
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            //// Uncomment the following lines to enable logging in with third party login providers
+            ////app.UseMicrosoftAccountAuthentication(
+            ////    clientId: "",
+            ////    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            ////app.UseTwitterAuthentication(
+            ////   consumerKey: "",
+            ////   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            ////app.UseFacebookAuthentication(
+            ////   appId: "",
+            ////   appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            ////app.UseGoogleAuthentication();
         }
     }
 }
