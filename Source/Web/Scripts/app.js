@@ -1,10 +1,11 @@
-﻿(function () {
+﻿'use strict';
 
-    "use strict";
+// Declares how the application should be bootstrapped. See: http://docs.angularjs.org/guide/module
+angular.module('app', ['ui.router', 'app.filters', 'app.services', 'app.directives', 'app.controllers'])
 
-    var app = angular.module('app', ['ui.router', 'app.controllers']);
-
-    app.config(['$stateProvider', '$locationProvider', function ($stateProvider, $locationProvider) {
+    // Gets executed during the provider registrations and configuration phase. Only providers and constants can be
+    // injected here. This is to prevent accidental instantiation of services before they have been fully configured.
+    .config(['$stateProvider', '$locationProvider', function ($stateProvider, $locationProvider) {
 
         // UI States, URL Routing & Mapping. For more info see: https://github.com/angular-ui/ui-router
         // ------------------------------------------------------------------------------------------------------------
@@ -35,9 +36,11 @@
 
         $locationProvider.html5Mode(true);
 
-    }]);
+    }])
 
-    app.run(['$templateCache', '$rootScope', '$state', '$stateParams', function ($templateCache, $rootScope, $state, $stateParams) {
+    // Gets executed after the injector is created and are used to kickstart the application. Only instances and constants
+    // can be injected here. This is to prevent further system configuration during application run time.
+    .run(['$templateCache', '$rootScope', '$state', '$stateParams', function ($templateCache, $rootScope, $state, $stateParams) {
 
         // <ui-view> contains a pre-rendered template for the current view
         // caching it will prevent a round-trip to a server at the first page load
@@ -55,5 +58,3 @@
             $rootScope.layout = toState.layout;
         });
     }]);
-
-}());

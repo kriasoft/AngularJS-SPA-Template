@@ -138,6 +138,18 @@
     <Content Include="Scripts\controllers.spec.js">
       <DependentUpon>controllers.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\directives.js" />
+    <Content Include="Scripts\directives.spec.js">
+      <DependentUpon>directives.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\filters.js" />
+    <Content Include="Scripts\filters.spec.js">
+      <DependentUpon>filters.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\services.js" />
+    <Content Include="Scripts\services.spec.js">
+      <DependentUpon>services.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\vendor\angular-csp.css" />
     <Content Include="Scripts\vendor\angular-ui-router.js" />
     <Content Include="Scripts\vendor\angular-ui-router.min.js" />
