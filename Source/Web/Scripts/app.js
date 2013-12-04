@@ -2,7 +2,7 @@
 
     "use strict";
 
-    var app = angular.module('app', ['ui.router']);
+    var app = angular.module('app', ['ui.router', 'app.controllers']);
 
     app.config(['$stateProvider', '$locationProvider', function ($stateProvider, $locationProvider) {
 
@@ -12,11 +12,14 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: '/views/index'
+                templateUrl: '/views/index',
+                controller: 'HomeCtrl'
+
             })
             .state('about', {
                 url: '/about',
-                templateUrl: '/views/about'
+                templateUrl: '/views/about',
+                controller: 'AboutCtrl'
             })
             .state('login', {
                 url: '/login',
@@ -26,14 +29,15 @@
             })
             .state('otherwise', {
                 url: '*path',
-                templateUrl: '/views/404'
+                templateUrl: '/views/404',
+                controller: 'Error404Ctrl'
             });
 
         $locationProvider.html5Mode(true);
 
     }]);
 
-    app.run(['$templateCache', '$rootScope', '$state', '$stateParams', '$window', function ($templateCache, $rootScope, $state, $stateParams, $window) {
+    app.run(['$templateCache', '$rootScope', '$state', '$stateParams', function ($templateCache, $rootScope, $state, $stateParams) {
 
         // <ui-view> contains a pre-rendered template for the current view
         // caching it will prevent a round-trip to a server at the first page load
@@ -44,40 +48,12 @@
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
 
-        // Embed Google Analytics tracking code, but only if `<body data-ga="UA-XXXXX-X">` value is present
-        if (angular.element('body').data('ga')) {
-            (function (b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-                function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-                e = o.createElement(i); r = o.getElementsByTagName(i)[0];
-                e.src = '//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }($window, $window.document, 'script', 'ga'));
-            ga('create', angular.element('body').data('ga'));
-        } else {
-            $window.ga = $window.ga || function () { };
-        }
-
         $rootScope.$on('$stateChangeSuccess', function (event, toState) {
 
             // Sets the layout name, which can be used to display different layouts (header, footer etc.)
             // based on which page the user is located
             $rootScope.layout = toState.layout;
-
-            // Track page view via Google Analytics
-            ga('send', 'pageview');
         });
-    }]);
-
-    // Controllers
-    // ----------------------------------------------------------------------------------------------------------------
-
-    app.controller('LoginCtrl', ['$scope', '$location', function ($scope, $location) {
-        // TODO: Authorize a user
-        $scope.login = function (userName, password) {
-            $location.path('/');
-            return false;
-        };
     }]);
 
 }());

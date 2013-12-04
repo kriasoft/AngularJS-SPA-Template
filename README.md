@@ -3,7 +3,7 @@
 This project is a skeleton for a simple single-page web application (SPA) built on top of the:
 
  - [ASP.NET Web Pages](http://www.asp.net/web-pages) (Razor) 3.0
- - [AngularJS](http://www.angularjs.org) 1.2.2 - JavaScript Framework
+ - [AngularJS](http://www.angularjs.org) 1.2.3 - JavaScript Framework
  - [Bootstrap](http://getbootstrap.com/) 3.0.2 - CSS Framework (based on [LESS](http://lesscss.org/))
 
 You can use it to quickly bootstrap your AngularJS web app projects and dev environment for these projects.

@@ -20,7 +20,8 @@ namespace App.Web
 
             bundles.Add(new ScriptBundle("~/js/app").Include(
                 "~/scripts/vendor/angular-ui-router.js",
-                "~/scripts/app.js"));
+                "~/scripts/app.js",
+                "~/scripts/controllers.js"));
         }
     }
 }
