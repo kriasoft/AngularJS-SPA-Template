@@ -212,3 +212,10 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#############
+## Custom
+#############
+
+Extension/AngularJS
+Extension/Output/ProjectTemplates/CSharp/Web/1033/AngularJS.zip
