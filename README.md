@@ -2,9 +2,11 @@
 
 This project is a skeleton for a simple single-page web application (SPA) built on top of the:
 
- - [ASP.NET Web Pages](http://www.asp.net/web-pages) (Razor) 3.0
- - [AngularJS](http://www.angularjs.org) 1.2.3 - JavaScript Framework
- - [Bootstrap](http://getbootstrap.com/) 3.0.2 - CSS Framework (based on [LESS](http://lesscss.org/))
+ - **[AngularJS](http://www.angularjs.org) 1.2.3** - JavaScript Framework
+ - **[Bootstrap](http://getbootstrap.com/) 3.0.3** - CSS Framework (based on [LESS](http://lesscss.org/))
+ - **[HTML5 Boilerplate](http://html5boilerplate.com/)** - HTML5 best practices
+ - **[ASP.NET Web Pages 3.0](http://www.asp.net/web-pages) (Razor)** - AngularJS templates / views
+ - **[ASP.NET Web Optimization Framework](http://www.asp.net/mvc/tutorials/mvc-4/bundling-and-minification)** - Bundling & Minification
 
 You can use it to quickly bootstrap your AngularJS web app projects and dev environment for these projects.
 
@@ -15,6 +17,13 @@ and test your application.
 
 http://angular-demo.tarkus.me
 
+### Visual Studio Extension
+
+[![AngularJS SPA Template for Visual Studio](http://i.imgur.com/sl8JZtz.png)](http://visualstudiogallery.msdn.microsoft.com/5af151b2-9ed2-4809-bfe8-27566bfe7d83)
+
+### Project Structure
+
+![AngularJS SPA Project Structure](http://i.imgur.com/gEBRhe6.png)
 
 ### Development Environment
 
