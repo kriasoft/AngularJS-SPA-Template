@@ -5,7 +5,7 @@ This project is a skeleton for a simple single-page web application (SPA) built 
  - **[AngularJS 1.2.3](http://www.angularjs.org)** - JavaScript Framework
  - **[Bootstrap 3.0.3](http://getbootstrap.com/)** - CSS Framework (based on [LESS](http://lesscss.org/))
  - **[HTML5 Boilerplate](http://html5boilerplate.com/)** - HTML5 best practices
- - **[ASP.NET Web Pages 3.0](http://www.asp.net/web-pages) (Razor)** - AngularJS templates / views
+ - **[ASP.NET Web Pages 3.0](http://www.asp.net/web-pages)** (Razor) - AngularJS templates / views
  - **[ASP.NET Web Optimization Framework](http://www.asp.net/mvc/tutorials/mvc-4/bundling-and-minification)** - Bundling & Minification
 
 You can use it to quickly bootstrap your AngularJS web app projects and dev environment for these projects.
