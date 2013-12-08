@@ -1,0 +1,2 @@
+﻿ - Update Bootstrap CSS library to v3.0.3
+ - Update favicon.ico and apple-touch-icon-precomposed.png

@@ -23,6 +23,7 @@ foreach ($file in Get-ChildItem (Join-Path $targetDir "*.cs") -Recurse)
 {
     (Get-Content $file.PSPath) |
         Foreach-Object {$_ -Replace "System\.\`$safeprojectname\`$", "System.Web"} |
+        Foreach-Object {$_ -Replace "`"KriaSoft LLC`"", "`"`$registeredorganization`$`""} |
         Foreach-Object {$_ -Replace "Copyright © 2013 Konstantin Tarkus, KriaSoft LLC. See LICENSE.txt", "Copyright © `$year`$ `$registeredorganization`$"} |
         Set-Content $file.PSPath
 }

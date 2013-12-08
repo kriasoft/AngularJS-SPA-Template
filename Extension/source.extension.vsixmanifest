@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="AngularJS-SPA-Template..794928e1-0a1d-40cc-b098-1fbc54752197" Version="1.0.0" Language="en-US" Publisher="Konstantin Tarkus" />
+    <Identity Id="AngularJS-SPA-Template..794928e1-0a1d-40cc-b098-1fbc54752197" Version="1.0.1" Language="en-US" Publisher="Konstantin Tarkus" />
     <DisplayName>AngularJS SPA Template</DisplayName>
     <Description xml:space="preserve">AngularJS SPA Template is a project skeleton of a simple single-page web application (SPA) built with AngularJS, Bootstrap and ASP.NET.</Description>
     <MoreInfo>https://github.com/kriasoft/AngularJS-SPA-Template</MoreInfo>
     <License>LICENSE.txt</License>
+    <ReleaseNotes>CHANGELOG.txt</ReleaseNotes>
     <Icon>icon.png</Icon>
     <PreviewImage>preview.png</PreviewImage>
     <Tags>AngularJS, Bootstrap, JavaScript, Single-page Application, SPA</Tags>
