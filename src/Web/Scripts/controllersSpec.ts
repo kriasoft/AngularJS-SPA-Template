@@ -1,5 +1,9 @@
-﻿/// <reference path="_references.js" />
-/// <reference path="controllers.js" />
+/// <chutzpah_reference path="vendor/angular.js" />
+/// <chutzpah_reference path="vendor/angular-mocks.js" />
+/// <reference path="typings/jasmine/jasmine.d.ts" />
+/// <reference path="typings/angularjs/angular-mocks.d.ts" />
+/// <reference path="typings/jasmine/jasmine.d.ts" />
+/// <reference path="controllers.ts" />
 
 'use strict';
 
