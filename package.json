@@ -1,0 +1,12 @@
+{
+  "name": "AngularJS-SPA-Template",
+  "description": "AngularJS SPA Project Template for Visual Studio",
+  "repository": "https://github.com/KriaSoft/AngularJS-SPA-Template",
+  "devDependencies": {
+    "phantomjs" : "~1.9",
+    "karma" : "~0.10",
+    "karma-junit-reporter" : "~0.1",
+    "karma-jasmine" : "~0.1",
+    "karma-ng-scenario" : "~0.1"
+  }
+}

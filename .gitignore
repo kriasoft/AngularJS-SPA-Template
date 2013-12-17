@@ -132,7 +132,10 @@ publish/
 #*.pubxml
 
 # NuGet Packages Directory
-Packages/
+packages/
+
+# Node.js Modules Directory
+node_modules/
 
 # Windows Azure Build Output
 csx
