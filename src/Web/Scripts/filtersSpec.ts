@@ -7,7 +7,7 @@
 
 'use strict';
 
-describe('Filter', () => {
+describe('Filters', () => {
     beforeEach(module('app.filters'));
 
     describe('interpolate', () => {

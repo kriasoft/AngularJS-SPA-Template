@@ -7,7 +7,7 @@
 
 'use strict';
 
-describe('service', () => {
+describe('Services', () => {
     beforeEach(module('app.services'));
 
     describe('version', () => {
