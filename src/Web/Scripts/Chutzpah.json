@@ -1,0 +1,16 @@
+﻿{
+    "Framework": "jasmine",
+    "TypeScriptCodeGenTarget": "ES5",
+    "CodeCoverageExcludes": [
+        "*\\vendor\\*.js",
+        "controllersSpec.js",
+    ],
+    "References": [
+        { "Path": "vendor\\angular.min.js" },
+        { "Path": "vendor\\angular-mocks.js" },
+        { "Path": "typings\\jquery\\jquery.d.ts", "IncludeInTestHarness": false },
+        { "Path": "typings\\angularjs\\angular.d.ts", "IncludeInTestHarness": false },
+        { "Path": "typings\\angularjs\\angular-mocks.d.ts", "IncludeInTestHarness": false },
+        { "Path": "typings\\jasmine\\jasmine.d.ts", "IncludeInTestHarness": false }
+    ]
+}
