@@ -1,4 +1,4 @@
-/// <chutzpah_reference path="vendor/angular.js" />
+/// <chutzpah_reference path="vendor/angular.min.js" />
 /// <chutzpah_reference path="vendor/angular-mocks.js" />
 /// <reference path="typings/jasmine/jasmine.d.ts" />
 /// <reference path="typings/angularjs/angular-mocks.d.ts" />
