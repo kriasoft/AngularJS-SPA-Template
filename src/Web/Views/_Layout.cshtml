@@ -42,9 +42,13 @@
         </div>
     </header>
 
-    <div id="ui-view" class="container" ui-view data-tmpl-url="@Request.RequestContext.RouteData.DataTokens["templateUrl"]">
-        @RenderBody()
+    <div class="container" ui-view>
+        
     </div>
+
+    <script type="text/ng-template" id="initial-view" data-tmpl-url="@Request.RequestContext.RouteData.DataTokens["templateUrl"]">
+        @RenderBody()
+    </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
