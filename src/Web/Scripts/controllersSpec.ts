@@ -1,5 +1,4 @@
-﻿/// <reference path="_references.js" />
-/// <reference path="controllers.js" />
+/// <reference path="controllers.ts" />
 
 'use strict';
 
